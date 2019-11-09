@@ -1,4 +1,4 @@
-START:  Fri 8 Nov 14:40:44 GMT 2019
+START:  Sat 9 Nov 14:49:16 GMT 2019
 ==> default: Removing domain...
 Bringing machine 'default' up with 'libvirt' provider...
 ==> default: Checking if box 'generic/ubuntu1804' version '1.9.38' is up to date...
@@ -49,7 +49,7 @@ Bringing machine 'default' up with 'libvirt' provider...
 ==> default: Preparing to edit /etc/exports. Administrator privileges will be required...
 ==> default: Mounting NFS shared folders...
 ==> default: Running provisioner: shell...
-    default: Running: /tmp/vagrant-shell20191108-1421568-sz0wl3.sh
+    default: Running: /tmp/vagrant-shell20191109-1737266-efh5vl.sh
     default: Reading package lists...
     default: Building dependency tree...
     default: Reading state information...
@@ -106,7 +106,7 @@ Bringing machine 'default' up with 'libvirt' provider...
     default: Get:29 http://us.archive.ubuntu.com/ubuntu bionic/universe amd64 mc-data all 3:4.8.19-1 [1,238 kB]
     default: Get:30 http://us.archive.ubuntu.com/ubuntu bionic/universe amd64 mc amd64 3:4.8.19-1 [474 kB]
     default: dpkg-preconfigure: unable to re-open stdin: No such file or directory
-    default: Fetched 43.0 MB in 27s (1,598 kB/s)
+    default: Fetched 43.0 MB in 27s (1,616 kB/s)
     default: Selecting previously unselected package libjpeg-turbo8:amd64.
     default: (Reading database ... 
     default: (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%
@@ -241,18 +241,12 @@ Bringing machine 'default' up with 'libvirt' provider...
     default: Setting up openjdk-11-jre-headless:amd64 (11.0.4+11-1ubuntu2~18.04.3) ...
     default: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/rmid to provide /usr/bin/rmid (rmid) in auto mode
     default: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/java to provide /usr/bin/java (java) in auto mode
-    default: update-alternatives: 
-    default: using /usr/lib/jvm/java-11-openjdk-amd64/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
-    default: update-alternatives: 
-    default: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jjs to provide /usr/bin/jjs (jjs) in auto mode
-    default: update-alternatives: 
-    default: using /usr/lib/jvm/java-11-openjdk-amd64/bin/pack200 to provide /usr/bin/pack200 (pack200) in auto mode
-    default: update-alternatives: 
-    default: using /usr/lib/jvm/java-11-openjdk-amd64/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode
-    default: update-alternatives: 
-    default: using /usr/lib/jvm/java-11-openjdk-amd64/bin/unpack200 to provide /usr/bin/unpack200 (unpack200) in auto mode
-    default: update-alternatives: 
-    default: using /usr/lib/jvm/java-11-openjdk-amd64/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jjs to provide /usr/bin/jjs (jjs) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/pack200 to provide /usr/bin/pack200 (pack200) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/unpack200 to provide /usr/bin/unpack200 (unpack200) in auto mode
+    default: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
     default: Setting up ca-certificates-java (20180516ubuntu1~18.04.1) ...
     default: head: cannot open '/etc/ssl/certs/java/cacerts' for reading: No such file or directory
     default: Adding debian:QuoVadis_Root_CA_2_G3.pem
@@ -405,17 +399,18 @@ Bringing machine 'default' up with 'libvirt' provider...
     default: Hit:1 http://us.archive.ubuntu.com/ubuntu bionic InRelease
     default: Hit:2 http://us.archive.ubuntu.com/ubuntu bionic-updates InRelease
     default: Get:3 https://artifacts.elastic.co/packages/7.x/apt stable InRelease [7,124 B]
-    default: Hit:4 http://us.archive.ubuntu.com/ubuntu bionic-backports InRelease
-    default: Get:5 https://artifacts.elastic.co/packages/7.x/apt stable/main i386 Packages [17.5 kB]
-    default: Get:6 https://artifacts.elastic.co/packages/7.x/apt stable/main amd64 Packages [21.9 kB]
-    default: Hit:7 http://security.ubuntu.com/ubuntu bionic-security InRelease
-    default: Fetched 46.5 kB in 1s (43.1 kB/s)
+    default: Get:4 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+    default: Hit:5 http://us.archive.ubuntu.com/ubuntu bionic-backports InRelease
+    default: Get:6 https://artifacts.elastic.co/packages/7.x/apt stable/main i386 Packages [17.5 kB]
+    default: Get:7 https://artifacts.elastic.co/packages/7.x/apt stable/main amd64 Packages [21.9 kB]
+    default: Fetched 135 kB in 1s (145 kB/s)
     default: Reading package lists...
-    default: Hit:1 https://artifacts.elastic.co/packages/7.x/apt stable InRelease
-    default: Hit:2 http://us.archive.ubuntu.com/ubuntu bionic InRelease
-    default: Hit:3 http://security.ubuntu.com/ubuntu bionic-security InRelease
+    default: Get:1 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+    default: Hit:2 https://artifacts.elastic.co/packages/7.x/apt stable InRelease
+    default: Hit:3 http://us.archive.ubuntu.com/ubuntu bionic InRelease
     default: Hit:4 http://us.archive.ubuntu.com/ubuntu bionic-updates InRelease
     default: Hit:5 http://us.archive.ubuntu.com/ubuntu bionic-backports InRelease
+    default: Fetched 88.7 kB in 1s (82.0 kB/s)
     default: Reading package lists...
     default: Reading package lists...
     default: Building dependency tree...
@@ -430,7 +425,7 @@ Bringing machine 'default' up with 'libvirt' provider...
     default: Get:2 https://artifacts.elastic.co/packages/7.x/apt stable/main amd64 kibana amd64 7.4.2 [259 MB]
     default: Get:3 https://artifacts.elastic.co/packages/7.x/apt stable/main amd64 logstash all 1:7.4.2-1 [175 MB]
     default: dpkg-preconfigure: unable to re-open stdin: No such file or directory
-    default: Fetched 723 MB in 25s (29.3 MB/s)
+    default: Fetched 723 MB in 24s (30.3 MB/s)
     default: Selecting previously unselected package elasticsearch.
     default: (Reading database ... 
     default: (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%
@@ -476,4 +471,8 @@ Bringing machine 'default' up with 'libvirt' provider...
     default: Created symlink /etc/systemd/system/multi-user.target.wants/logstash.service → /etc/systemd/system/logstash.service.
     default: Synchronizing state of kibana.service with SysV service script with /lib/systemd/systemd-sysv-install.
     default: Executing: /lib/systemd/systemd-sysv-install enable kibana
-STOP:  Fri 8 Nov 14:45:15 GMT 2019
+[1G   Check Items Count[K[149G1/1[2G[1G ✓ Check Items Count[K
+[0m
+1 test, 0 failures
+Connection to 192.168.121.161 closed.
+STOP:  Sat 9 Nov 14:53:41 GMT 2019

@@ -18,14 +18,10 @@ node.name: \"elkhost\"
 cluster.initial_master_nodes:
   - elkhost
 " >> /etc/elasticsearch/elasticsearch.yml
-# # 4.2. Configure Logstash
-# echo "
-# network.host: 0.0.0.0
-# cluster.name: elkcluster
-# node.name: \"elkhost\"
-# cluster.initial_master_nodes:
-#   - elkhost
-# " >> /etc/elasticsearch/elasticsearch.yml
+
+# 4.2. Configure Logstash
+cp /vagrant/document.conf /etc/logstash/conf.d/
+
 # 4.3. Configure Kibana
 echo "
 server.host: \"0.0.0.0\"
