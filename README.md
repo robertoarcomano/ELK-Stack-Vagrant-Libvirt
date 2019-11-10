@@ -8,3 +8,4 @@ How to create an ELK Stack on Vagrant using libvirt Hypervisor
 ## 5. Log file <a href=log.txt>log.txt</a>
 ## 6. Logstash configuration file to import data from .CSV to Elasticsearch: <a href=document.conf>document.conf</a>
 ## 7. CSV sample file: <a href=document.csv>document.csv</a>
+## 8. Data imported <img src=kibana.png>

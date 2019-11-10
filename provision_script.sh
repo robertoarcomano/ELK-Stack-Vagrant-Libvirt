@@ -1,5 +1,33 @@
 #!/bin/bash
 
+# 1. Create CSV file
+export N=1000
+awk -v N=$N 'BEGIN {
+  srand();
+  # Header
+  print "id;name;price;date";
+  for (i=0; i<N; i++) {
+    # Day
+    d=sprintf("%.2d",(rand()*30)+1);
+
+    # Month
+    m=sprintf("%.2d",(rand()*11)+1);
+
+    # Year
+    y="2019"
+
+    # Hour
+    hh=sprintf("%.2d",(rand()*22));
+    mm=sprintf("%.2d",(rand()*60));
+    ss=sprintf("%.2d",(rand()*60));
+
+    # Timestamp
+    # 2016-11-10 06:06:11
+    timestamp=y "/" m "/" d " " hh ":" mm ":" ss
+    print i ";" "Name " i ";" (rand()*100) ";" timestamp;
+  }
+}' > /vagrant/document.csv
+
 # 2. Install base packages
 apt-get install -y bats jq openjdk-11-jre-headless mc apt-transport-https
 

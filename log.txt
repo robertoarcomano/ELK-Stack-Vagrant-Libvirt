@@ -1,4 +1,4 @@
-START:  Sat 9 Nov 14:49:16 GMT 2019
+START:  Sun 10 Nov 17:59:42 GMT 2019
 ==> default: Removing domain...
 Bringing machine 'default' up with 'libvirt' provider...
 ==> default: Checking if box 'generic/ubuntu1804' version '1.9.38' is up to date...
@@ -49,9 +49,10 @@ Bringing machine 'default' up with 'libvirt' provider...
 ==> default: Preparing to edit /etc/exports. Administrator privileges will be required...
 ==> default: Mounting NFS shared folders...
 ==> default: Running provisioner: shell...
-    default: Running: /tmp/vagrant-shell20191109-1737266-efh5vl.sh
+    default: Running: /tmp/vagrant-shell20191110-25594-4inhlw.sh
     default: Reading package lists...
     default: Building dependency tree...
+    default: 
     default: Reading state information...
     default: The following additional packages will be installed:
     default:   ca-certificates-java fontconfig-config fonts-dejavu-core java-common
@@ -106,7 +107,7 @@ Bringing machine 'default' up with 'libvirt' provider...
     default: Get:29 http://us.archive.ubuntu.com/ubuntu bionic/universe amd64 mc-data all 3:4.8.19-1 [1,238 kB]
     default: Get:30 http://us.archive.ubuntu.com/ubuntu bionic/universe amd64 mc amd64 3:4.8.19-1 [474 kB]
     default: dpkg-preconfigure: unable to re-open stdin: No such file or directory
-    default: Fetched 43.0 MB in 27s (1,616 kB/s)
+    default: Fetched 43.0 MB in 23s (1,891 kB/s)
     default: Selecting previously unselected package libjpeg-turbo8:amd64.
     default: (Reading database ... 
     default: (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%
@@ -397,20 +398,19 @@ Bringing machine 'default' up with 'libvirt' provider...
     default: Warning: apt-key output should not be parsed (stdout is not a terminal)
     default: OK
     default: Hit:1 http://us.archive.ubuntu.com/ubuntu bionic InRelease
-    default: Hit:2 http://us.archive.ubuntu.com/ubuntu bionic-updates InRelease
-    default: Get:3 https://artifacts.elastic.co/packages/7.x/apt stable InRelease [7,124 B]
-    default: Get:4 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
-    default: Hit:5 http://us.archive.ubuntu.com/ubuntu bionic-backports InRelease
+    default: Hit:2 http://security.ubuntu.com/ubuntu bionic-security InRelease
+    default: Hit:3 http://us.archive.ubuntu.com/ubuntu bionic-updates InRelease
+    default: Hit:4 http://us.archive.ubuntu.com/ubuntu bionic-backports InRelease
+    default: Get:5 https://artifacts.elastic.co/packages/7.x/apt stable InRelease [7,124 B]
     default: Get:6 https://artifacts.elastic.co/packages/7.x/apt stable/main i386 Packages [17.5 kB]
     default: Get:7 https://artifacts.elastic.co/packages/7.x/apt stable/main amd64 Packages [21.9 kB]
-    default: Fetched 135 kB in 1s (145 kB/s)
+    default: Fetched 46.5 kB in 1s (41.9 kB/s)
     default: Reading package lists...
-    default: Get:1 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
-    default: Hit:2 https://artifacts.elastic.co/packages/7.x/apt stable InRelease
-    default: Hit:3 http://us.archive.ubuntu.com/ubuntu bionic InRelease
+    default: Hit:1 http://security.ubuntu.com/ubuntu bionic-security InRelease
+    default: Hit:2 http://us.archive.ubuntu.com/ubuntu bionic InRelease
+    default: Hit:3 https://artifacts.elastic.co/packages/7.x/apt stable InRelease
     default: Hit:4 http://us.archive.ubuntu.com/ubuntu bionic-updates InRelease
     default: Hit:5 http://us.archive.ubuntu.com/ubuntu bionic-backports InRelease
-    default: Fetched 88.7 kB in 1s (82.0 kB/s)
     default: Reading package lists...
     default: Reading package lists...
     default: Building dependency tree...
@@ -425,10 +425,16 @@ Bringing machine 'default' up with 'libvirt' provider...
     default: Get:2 https://artifacts.elastic.co/packages/7.x/apt stable/main amd64 kibana amd64 7.4.2 [259 MB]
     default: Get:3 https://artifacts.elastic.co/packages/7.x/apt stable/main amd64 logstash all 1:7.4.2-1 [175 MB]
     default: dpkg-preconfigure: unable to re-open stdin: No such file or directory
-    default: Fetched 723 MB in 24s (30.3 MB/s)
+    default: Fetched 723 MB in 25s (29.5 MB/s)
     default: Selecting previously unselected package elasticsearch.
     default: (Reading database ... 
-    default: (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%
+    default: (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%
+    default: (Reading database ... 20%
+    default: (Reading database ... 25%(Reading database ... 30%
+    default: (Reading database ... 35%
+    default: (Reading database ... 40%
+    default: (Reading database ... 45%(Reading database ... 50%
+    default: (Reading database ... 55%
     default: (Reading database ... 60%
     default: (Reading database ... 65%
     default: (Reading database ... 70%
@@ -474,5 +480,5 @@ Bringing machine 'default' up with 'libvirt' provider...
 [1G   Check Items Count[K[149G1/1[2G[1G ✓ Check Items Count[K
 [0m
 1 test, 0 failures
-Connection to 192.168.121.161 closed.
-STOP:  Sat 9 Nov 14:53:41 GMT 2019
+Connection to 192.168.121.8 closed.
+STOP:  Sun 10 Nov 18:04:38 GMT 2019
